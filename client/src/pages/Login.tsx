@@ -15,6 +15,8 @@ export default function Login() {
     if (user === "bubu" && pass === "1234") {
       localStorage.setItem("af_auth", "1");
       setError("");
+      // Notify app about auth change so it can re-render to the protected area
+      window.dispatchEvent(new Event("af_auth_changed"));
       setLocation("/");
     } else {
       setError("Invalid credentials");

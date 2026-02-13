@@ -16,7 +16,7 @@ export default function Level0_Entry({ onComplete }: Props) {
   const handleStart = async () => {
     setIsStarting(true);
     try {
-      const session = await createSession.mutateAsync({});
+      const session = await createSession.mutateAsync();
       onComplete(session.id);
     } catch (error) {
       console.error("Failed to start game", error);
