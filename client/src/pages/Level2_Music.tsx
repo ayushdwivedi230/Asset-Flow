@@ -66,11 +66,11 @@ export default function Level2_Music({ onComplete }: Props) {
     setMessage("This song feels like you…");
 
     setTimeout(() => {
-      setMessage("Har line me bas tum hi ho.");
+      setMessage("Every word reminds me of us.");
     }, 5000);
 
     setTimeout(() => {
-      setMessage("Kuch ehsaas sirf mehsoos kiye jaate hain ❤️");
+      setMessage("Some feelings don’t need words. ❤️");
     }, 10000);
 
     // ⏭️ move ahead after full 15 sec
